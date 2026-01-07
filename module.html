@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UEL Modules & Portfolio — Abdulhannan Vhora</title>
+  <meta name="description" content="University of East London MSc Data Science modules and portfolio work." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">Abdulhannan Vhora</span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="#modules">Modules</a>
+        <a href="#downloads">Downloads</a>
+        <a class="nav__cta" href="index.html">Home</a>
+      </nav>
+
+      <div class="topbar__actions">
+        <button class="btn btn--ghost" id="themeToggle" type="button" aria-label="Toggle theme">
+          <span class="icon" aria-hidden="true">◐</span>
+          <span class="hide-sm">Theme</span>
+        </button>
+        <button class="btn btn--ghost burger" id="mobileMenuBtn" type="button" aria-label="Open menu">
+          <span aria-hidden="true">☰</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobileMenu" id="mobileMenu" aria-hidden="true">
+      <div class="container mobileMenu__inner">
+        <a href="index.html" class="mobileLink">Home</a>
+        <a href="#modules" class="mobileLink">Modules</a>
+        <a href="#downloads" class="mobileLink">Downloads</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="pageHero">
+      <div class="container pageHero__inner reveal">
+        <div class="kicker">University of East London • MSc Data Science</div>
+        <h1 class="pageHero__title">Modules & Academic Portfolio</h1>
+        <p class="pageHero__subtitle">
+          A structured showcase of coursework, methods, and outcomes—designed for fast scanning and recruiter-friendly review.
+        </p>
+
+        <div class="filterBar" id="modules">
+          <button class="filterBtn is-active" data-filter="all">All</button>
+          <button class="filterBtn" data-filter="ml">Machine Learning</button>
+          <button class="filterBtn" data-filter="spatial">Spatial / GIS</button>
+          <button class="filterBtn" data-filter="stats">Quant / Statistics</button>
+          <button class="filterBtn" data-filter="db">Databases / SQL</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid2">
+          <!-- DS7006 -->
+          <article class="moduleCard reveal" data-tags="stats ml db spatial" id="ds7006">
+            <div class="moduleCard__head">
+              <div>
+                <h2>DS7006 — Quantitative Data Analysis</h2>
+                <p class="muted">Statistics • Visualisation • Modelling • Interpretation</p>
+              </div>
+              <span class="pill">Core Module</span>
+            </div>
+
+            <div class="accordion">
+              <button class="accordion__btn" type="button" aria-expanded="false">
+                Overview & Outcomes <span aria-hidden="true">+</span>
+              </button>
+              <div class="accordion__panel">
+                <ul class="list">
+                  <li>Exercise portfolio covering descriptive analysis, hypothesis testing, regression, PCA and clustering.</li>
+                  <li>Applied statistical reasoning to real-world datasets and communicated results clearly.</li>
+                  <li>Worked with model diagnostics, effect sizes, and assumptions for reliable conclusions.</li>
+                </ul>
+                <div class="tags">
+                  <span class="tag">t-test</span><span class="tag">Wilcoxon</span><span class="tag">ANOVA</span>
+                  <span class="tag">Chi-square</span><span class="tag">Regression</span><span class="tag">PCA</span>
+                  <span class="tag">Clustering</span>
+                </div>
+              </div>
+
+              <button class="accordion__btn" type="button" aria-expanded="false">
+                Key Evidence (What this proves) <span aria-hidden="true">+</span>
+              </button>
+              <div class="accordion__panel">
+                <div class="callouts">
+                  <div class="callout">
+                    <div class="callout__title">Statistical toolkit</div>
+                    <div class="callout__text">Confident selection of parametric vs non-parametric tests with interpretation.</div>
+                  </div>
+                  <div class="callout">
+                    <div class="callout__title">Multivariate thinking</div>
+                    <div class="callout__text">Used PCA + clustering to reduce complexity and reveal borough patterns.</div>
+                  </div>
+                  <div class="callout">
+                    <div class="callout__title">Model reliability</div>
+                    <div class="callout__text">Checked residuals, normality, and multicollinearity (VIF) for trustworthy models.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- DS7003 -->
+          <article class="moduleCard reveal" data-tags="ml stats" id="ds7003">
+            <div class="moduleCard__head">
+              <div>
+                <h2>DS7003 — Advanced Decision Making (Predictive Analytics & ML)</h2>
+                <p class="muted">Classification • Evaluation • Feature insight • Reporting</p>
+              </div>
+              <span class="pill pill--soft">Machine Learning</span>
+            </div>
+
+            <div class="accordion">
+              <button class="accordion__btn" type="button" aria-expanded="false">
+                Overview & Outcomes <span aria-hidden="true">+</span>
+              </button>
+              <div class="accordion__panel">
+                <ul class="list">
+                  <li>Built and evaluated classification models for student dropout prediction (RF, SVM, KNN, Decision Tree).</li>
+                  <li>Processed and analysed 4,000+ student records and compared model performance.</li>
+                  <li>Best model: Random Forest achieving 78.87% accuracy; identified key dropout drivers.</li>
+                </ul>
+                <div class="tags">
+                  <span class="tag">Random Forest</span><span class="tag">SVM</span><span class="tag">KNN</span>
+                  <span class="tag">Decision Tree</span><span class="tag">Confusion Matrix</span><span class="tag">Feature insight</span>
+                </div>
+              </div>
+
+              <button class="accordion__btn" type="button" aria-expanded="false">
+                Why it matters <span aria-hidden="true">+</span>
+              </button>
+              <div class="accordion__panel">
+                <p class="muted">
+                  Demonstrates end-to-end ML workflow: cleaning → training → evaluation → interpretation → actionable insight.
+                </p>
+                <div class="callouts">
+                  <div class="callout">
+                    <div class="callout__title">Result</div>
+                    <div class="callout__text"><b>78.87%</b> accuracy (best model), outperforming alternatives.</div>
+                  </div>
+                  <div class="callout">
+                    <div class="callout__title">Insight</div>
+                    <div class="callout__text">Drivers included attendance, early performance, and financial challenges.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- DS7002 -->
+          <article class="moduleCard reveal" data-tags="spatial db stats ml" id="ds7002">
+            <div class="moduleCard__head">
+              <div>
+                <h2>DS7002 — Spatial Data Analysis</h2>
+                <p class="muted">GIS • Spatial patterns • Critical evaluation • Mapping</p>
+              </div>
+              <span class="pill">Spatial / GIS</span>
+            </div>
+
+            <div class="accordion">
+              <button class="accordion__btn" type="button" aria-expanded="false">
+                Overview & Outcomes <span aria-hidden="true">+</span>
+              </button>
+              <div class="accordion__panel">
+                <ul class="list">
+                  <li>Critical review comparing Starbucks vs Luckin Coffee location strategies in China using spatial concepts + ML thinking.</li>
+                  <li>Used GIS visualisations (heatmaps, kernel density) and modelling logic (e.g., XGBoost reasoning) to interpret relationships.</li>
+                  <li>Built evidence-based critique: data quality, model choice, geographic scope, and improvement recommendations.</li>
+                </ul>
+                <div class="tags">
+                  <span class="tag">Heatmaps</span><span class="tag">Kernel Density</span><span class="tag">Retail Geography</span>
+                  <span class="tag">Spatial clustering</span><span class="tag">Model critique</span>
+                </div>
+              </div>
+
+              <button class="accordion__btn" type="button" aria-expanded="false">
+                Employability mapping <span aria-hidden="true">+</span>
+              </button>
+              <div class="accordion__panel">
+                <div class="callouts">
+                  <div class="callout">
+                    <div class="callout__title">Spatial reasoning</div>
+                    <div class="callout__text">Explains urban factors (density, transport, rent, competition) affecting site performance.</div>
+                  </div>
+                  <div class="callout">
+                    <div class="callout__title">Business value</div>
+                    <div class="callout__text">Connects spatial evidence to real location strategy decisions.</div>
+                  </div>
+                  <div class="callout">
+                    <div class="callout__title">Communication</div>
+                    <div class="callout__text">Turns complex spatial analytics into a clear report and presentation.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Methods summary -->
+          <article class="card reveal">
+            <h2>Methods & Skills Evidence</h2>
+            <p class="muted">
+              This portfolio demonstrates applied competency across quantitative analysis, spatial analytics, and ML—end-to-end.
+            </p>
+            <div class="tags">
+              <span class="tag">Data cleaning</span>
+              <span class="tag">Visual analytics</span>
+              <span class="tag">Hypothesis testing</span>
+              <span class="tag">Regression</span>
+              <span class="tag">PCA</span>
+              <span class="tag">Clustering</span>
+              <span class="tag">Spatial analysis</span>
+              <span class="tag">Dashboarding</span>
+              <span class="tag">SQL</span>
+            </div>
+            <div class="divider divider--sm"></div>
+            <p class="muted">
+              Want more depth? Add screenshots/plots and I’ll turn each module into a mini case-study section.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Downloads -->
+    <section class="section section--tint" id="downloads">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2>Downloads</h2>
+          <p class="muted">Optional: place PDFs into /downloads and these buttons will work</p>
+        </div>
+
+        <div class="downloadGrid reveal">
+          <a class="dBtn" href="downloads/DS7006_CW1.pdf" target="_blank" rel="noreferrer">
+            <div class="dBtn__title">DS7006 — Coursework 1</div>
+            <div class="dBtn__sub muted">Exercise Portfolio</div>
+          </a>
+
+          <a class="dBtn" href="downloads/DS7006_CW2.pdf" target="_blank" rel="noreferrer">
+            <div class="dBtn__title">DS7006 — Coursework 2</div>
+            <div class="dBtn__sub muted">Research paper / advanced analysis</div>
+          </a>
+
+          <a class="dBtn" href="downloads/DS7003_Report.pdf" target="_blank" rel="noreferrer">
+            <div class="dBtn__title">DS7003 — Predictive Analytics</div>
+            <div class="dBtn__sub muted">Student Dropout ML Report</div>
+          </a>
+
+          <a class="dBtn" href="downloads/DS7002_CW1.pdf" target="_blank" rel="noreferrer">
+            <div class="dBtn__title">DS7002 — Coursework 1</div>
+            <div class="dBtn__sub muted">Spatial portfolio</div>
+          </a>
+
+          <a class="dBtn" href="downloads/DS7002_CW2.pdf" target="_blank" rel="noreferrer">
+            <div class="dBtn__title">DS7002 — Coursework 2</div>
+            <div class="dBtn__sub muted">Spatial critical review</div>
+          </a>
+
+          <a class="dBtn" href="downloads/Abdulhannan_Vhora_CV.pdf" target="_blank" rel="noreferrer">
+            <div class="dBtn__title">Resume (CV)</div>
+            <div class="dBtn__sub muted">PDF version</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <div class="footer__title">Back to Home</div>
+          <div class="footer__links">
+            <a href="index.html">Home</a>
+            <span class="dot" aria-hidden="true">•</span>
+            <a href="#modules">Modules</a>
+            <span class="dot" aria-hidden="true">•</span>
+            <a href="#downloads">Downloads</a>
+          </div>
+        </div>
+        <div class="footer__mini muted">
+          © <span id="year"></span> Abdulhannan Vhora • Built for GitHub Pages
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
