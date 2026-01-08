@@ -271,44 +271,200 @@
       </div>
     </section>
 
-    <!-- Projects -->
-  <div class="grid3">
-  <article class="pCard reveal">
-    <div class="pCard__top">
-      <h3>DS7006 — Quantitative Data Analysis</h3>
-      <span class="pill pill--soft">Stats • PCA • Regression</span>
+<!-- Projects -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section__head reveal">
+      <h2>Projects</h2>
+      <p class="muted">Click any project to view details and open the full report files.</p>
     </div>
-    <p>Coursework files: exercise portfolio + research paper.</p>
-    <a class="pCard__link" href="module-files.html#ds7006-files">View files →</a>
-  </article>
 
-  <article class="pCard reveal">
-    <div class="pCard__top">
-      <h3>DS7003 — Predictive Analytics & ML</h3>
-      <span class="pill pill--soft">R • ML</span>
+    <!-- Search + Filters -->
+    <div class="card reveal" style="margin-bottom:18px;">
+      <div style="display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between;">
+        <div style="flex:1; min-width:240px;">
+          <input id="projectSearch" type="text" placeholder="Search projects (e.g., ML, GIS, Power BI, SQL)..."
+                 style="width:100%; padding:12px 14px; border-radius:14px; border:1px solid var(--border);
+                        background: var(--panel); color: var(--text); font-weight:700; outline:none;">
+        </div>
+        <div class="filterBar" style="margin:0;">
+          <button class="filterBtn is-active" data-pfilter="all">All</button>
+          <button class="filterBtn" data-pfilter="ml">ML</button>
+          <button class="filterBtn" data-pfilter="spatial">GIS</button>
+          <button class="filterBtn" data-pfilter="powerbi">Power BI</button>
+          <button class="filterBtn" data-pfilter="sql">SQL</button>
+          <button class="filterBtn" data-pfilter="python">Python</button>
+        </div>
+      </div>
     </div>
-    <p>Student dropout prediction report and model evaluation.</p>
-    <a class="pCard__link" href="module-files.html#ds7003-files">View files →</a>
-  </article>
 
-  <article class="pCard reveal">
-    <div class="pCard__top">
-      <h3>DS7002 — Spatial Data Analysis</h3>
-      <span class="pill pill--soft">GIS • Spatial</span>
-    </div>
-    <p>Spatial portfolio + critical review coursework.</p>
-    <a class="pCard__link" href="module-files.html#ds7002-files">View files →</a>
-  </article>
+    <!-- Project Cards -->
+    <div class="grid3" id="projectGrid">
 
-  <article class="pCard reveal">
-    <div class="pCard__top">
-      <h3>DS7001 — Mental Wealth / Data Ecology</h3>
-      <span class="pill pill--soft">Critical Review</span>
+      <!-- 1) DS7003 -->
+      <article class="pCard reveal projectCard" data-tags="ml python" data-title="Student Dropout Prediction">
+        <div class="pCard__top">
+          <h3>Student Dropout Prediction (DS7003)</h3>
+          <span class="pill pill--soft">R • ML</span>
+        </div>
+        <p>
+          Built classification models (RF, KNN, SVM, Decision Tree) on 4,000+ records.
+          Best accuracy: <b>78.87%</b>.
+        </p>
+        <div class="pCard__meta">
+          <span class="tag">Classification</span>
+          <span class="tag">Evaluation</span>
+          <span class="tag">Insights</span>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:10px;">
+          <a class="btn btn--secondary" href="projects/student-dropout.html">View Details</a>
+          <a class="btn btn--ghost" href="u2828994_DS7003_final%20(3).docx" target="_blank" rel="noreferrer">Open Report</a>
+        </div>
+      </article>
+
+      <!-- 2) DS7002 CW2 -->
+      <article class="pCard reveal projectCard" data-tags="spatial ml" data-title="Spatial Analysis Critical Review">
+        <div class="pCard__top">
+          <h3>Spatial Analysis Critical Review (DS7002)</h3>
+          <span class="pill pill--soft">GIS</span>
+        </div>
+        <p>
+          Comparative review of Starbucks vs Luckin Coffee location strategy in China using spatial thinking (density, heatmaps) + ML critique.
+        </p>
+        <div class="pCard__meta">
+          <span class="tag">Spatial Analytics</span>
+          <span class="tag">Retail Geography</span>
+          <span class="tag">Model critique</span>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:10px;">
+          <a class="btn btn--secondary" href="projects/spatial-critical-review.html">View Details</a>
+          <a class="btn btn--ghost" href="u2828994_DS7002_CW2_final%20(1).docx" target="_blank" rel="noreferrer">Open Report</a>
+        </div>
+      </article>
+
+      <!-- 3) DS7006 CW1 -->
+      <article class="pCard reveal projectCard" data-tags="ml sql python" data-title="Quantitative Data Analysis Portfolio">
+        <div class="pCard__top">
+          <h3>Quantitative Data Analysis Portfolio (DS7006)</h3>
+          <span class="pill pill--soft">Stats</span>
+        </div>
+        <p>
+          Applied hypothesis testing, regression, PCA and clustering. Communicated insights with clear visuals and interpretation.
+        </p>
+        <div class="pCard__meta">
+          <span class="tag">Regression</span>
+          <span class="tag">PCA</span>
+          <span class="tag">Clustering</span>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:10px;">
+          <a class="btn btn--secondary" href="projects/ds7006-portfolio.html">View Details</a>
+          <a class="btn btn--ghost" href="u2828994_DS7006_CW1%20(2).docx" target="_blank" rel="noreferrer">Open CW1</a>
+        </div>
+      </article>
+
+      <!-- 4) DS7006 CW2 -->
+      <article class="pCard reveal projectCard" data-tags="ml python" data-title="DS7006 Research Paper">
+        <div class="pCard__top">
+          <h3>DS7006 — Coursework 2 (Research Paper)</h3>
+          <span class="pill pill--soft">Stats</span>
+        </div>
+        <p>
+          Advanced quantitative analysis with evidence-based reporting and structured conclusions.
+        </p>
+        <div class="pCard__meta">
+          <span class="tag">Research</span>
+          <span class="tag">Statistics</span>
+          <span class="tag">Reporting</span>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:10px;">
+          <a class="btn btn--secondary" href="projects/ds7006-research.html">View Details</a>
+          <a class="btn btn--ghost" href="u2828994_DS7006_CW2_final.docx" target="_blank" rel="noreferrer">Open CW2</a>
+        </div>
+      </article>
+
+      <!-- 5) DS7002 CW1 -->
+      <article class="pCard reveal projectCard" data-tags="spatial" data-title="Spatial Portfolio CW1">
+        <div class="pCard__top">
+          <h3>Spatial Portfolio (DS7002 CW1)</h3>
+          <span class="pill pill--soft">GIS</span>
+        </div>
+        <p>
+          Spatial analysis exercises and visualisations showing geographic patterns and interpretation.
+        </p>
+        <div class="pCard__meta">
+          <span class="tag">Heatmaps</span>
+          <span class="tag">Spatial patterns</span>
+          <span class="tag">Mapping</span>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:10px;">
+          <a class="btn btn--secondary" href="projects/spatial-portfolio.html">View Details</a>
+          <a class="btn btn--ghost" href="u2828994_DS7002_CW1_final%20(3).docx" target="_blank" rel="noreferrer">Open CW1</a>
+        </div>
+      </article>
+
+      <!-- 6) DS7001 -->
+      <article class="pCard reveal projectCard" data-tags="python" data-title="Professional & Mental Wealth Coursework">
+        <div class="pCard__top">
+          <h3>DS7001 — Coursework</h3>
+          <span class="pill pill--soft">Reflection</span>
+        </div>
+        <p>
+          Professional development portfolio and critical reflection aligned to employability and leadership.
+        </p>
+        <div class="pCard__meta">
+          <span class="tag">Communication</span>
+          <span class="tag">Reflection</span>
+          <span class="tag">Leadership</span>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:10px;">
+          <a class="btn btn--secondary" href="projects/ds7001-coursework.html">View Details</a>
+          <a class="btn btn--ghost" href="u2828994_DS7001_CW_final.docx" target="_blank" rel="noreferrer">Open File</a>
+        </div>
+      </article>
+
+      <!-- 7) Uptrail Internship -->
+      <article class="pCard reveal projectCard" data-tags="powerbi sql excel" data-title="Uptrail Internship Analytics">
+        <div class="pCard__top">
+          <h3>Uptrail — Sales & Revenue Analytics</h3>
+          <span class="pill pill--soft">Excel • SQL • Power BI</span>
+        </div>
+        <p>
+          Analysed 1,000+ sales rows, built dashboards, and derived insights (categories driving 80%+ revenue; seasonal peaks).
+        </p>
+        <div class="pCard__meta">
+          <span class="tag">Dashboard</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Excel</span>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:10px;">
+          <a class="btn btn--secondary" href="projects/uptrail-analytics.html">View Details</a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/abdulhannan-vhora00/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </article>
+
+      <!-- 8) BCG Forage -->
+      <article class="pCard reveal projectCard" data-tags="python" data-title="BCG GenAI Simulation">
+        <div class="pCard__top">
+          <h3>BCG GenAI Simulation (Forage)</h3>
+          <span class="pill pill--soft">Python • GenAI</span>
+        </div>
+        <p>
+          Built a rule-based financial chatbot using Python and pandas, interpreting 10-K/10-Q reports for user-friendly insights.
+        </p>
+        <div class="pCard__meta">
+          <span class="tag">Data wrangling</span>
+          <span class="tag">Chatbot logic</span>
+          <span class="tag">Reporting</span>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:10px;">
+          <a class="btn btn--secondary" href="projects/bcg-genai.html">View Details</a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/abdulhannan-vhora00/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </article>
+
     </div>
-    <p>AI governance critical evaluation + portfolio work.</p>
-    <a class="pCard__link" href="module-files.html#ds7001-files">View files →</a>
-  </article>
-</div>
+  </div>
+</section>
 
 
     <!-- Education -->
