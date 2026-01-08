@@ -594,3 +594,43 @@ img{ max-width:100%; display:block; }
   .mobileMenu{ display:none; }
   .hide-sm{ display:none; }
 }
+
+// ===== Projects Search + Filter =====
+(function () {
+  const search = document.getElementById("projectSearch");
+  const cards = Array.from(document.querySelectorAll(".projectCard"));
+  const filterBtns = Array.from(document.querySelectorAll("[data-pfilter]"));
+
+  if (!cards.length) return;
+
+  let activeFilter = "all";
+
+  function applyFilters() {
+    const q = (search?.value || "").trim().toLowerCase();
+
+    cards.forEach((card) => {
+      const title = (card.dataset.title || "").toLowerCase();
+      const tags = (card.dataset.tags || "").toLowerCase();
+
+      const matchesText = !q || title.includes(q) || tags.includes(q);
+      const matchesFilter = activeFilter === "all" || tags.includes(activeFilter);
+
+      card.style.display = (matchesText && matchesFilter) ? "block" : "none";
+    });
+  }
+
+  if (search) {
+    search.addEventListener("input", applyFilters);
+  }
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      filterBtns.forEach((b) => b.classList.remove("is-active"));
+      btn.classList.add("is-active");
+      activeFilter = btn.dataset.pfilter || "all";
+      applyFilters();
+    });
+  });
+
+  applyFilters();
+})();
